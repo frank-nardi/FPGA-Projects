@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Feb 10 20:12:11 2025
+# Process ID: 8392
+# Current directory: U:/EECE351/Lab 1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11616 U:\EECE351\Lab 1\Lab 1.xpr
+# Log file: U:/EECE351/Lab 1/vivado.log
+# Journal file: U:/EECE351/Lab 1\vivado.jou
+# Running On: Monster-Lab-41, OS: Windows, CPU Frequency: 2295 MHz, CPU Physical cores: 4, Host memory: 17178 MB
+#-----------------------------------------------------------
+start_gui
+open_project {U:/EECE351/Lab 1/Lab 1.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {U:/EECE351/Lab 3/Lab 3.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {U:/EECE351/Lab 5/Lab 5.xpr}
+update_compile_order -fileset sources_1
