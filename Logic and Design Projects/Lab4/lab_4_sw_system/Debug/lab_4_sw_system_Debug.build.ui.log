@@ -1,0 +1,6 @@
+2025-02-27T13:58:14.211615200255-13:58:14 **** Build of configuration Debug for project lab_4_sw_system ****
+000-make all 
+000-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+00255-
+13:58:14 Build Finished (took 516ms)
+

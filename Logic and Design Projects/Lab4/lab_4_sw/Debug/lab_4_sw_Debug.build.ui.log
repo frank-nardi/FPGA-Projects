@@ -1,0 +1,21 @@
+2025-02-27T14:06:53.899040800255-14:06:53 **** Incremental Build of configuration Debug for project lab_4_sw ****
+000-make all 
+000-'Building file: ../src/Lab4.c'
+000-'Invoking: MicroBlaze gcc compiler'
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Lab4.o" -IU:/EECE387/Lab3/workspace/design_1_wrapper_1/export/design_1_wrapper_1/sw/design_1_wrapper_1/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Lab4.d" -MT"src/Lab4.o" -o "src/Lab4.o" "../src/Lab4.c"
+000-'Finished building: ../src/Lab4.c'
+000-' '
+000-'Building target: lab_4_sw.elf'
+000-'Invoking: MicroBlaze gcc linker'
+000-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/EECE387/Lab3/workspace/design_1_wrapper_1/export/design_1_wrapper_1/sw/design_1_wrapper_1/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab_4_sw.elf"  ./src/Lab4.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: lab_4_sw.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size lab_4_sw.elf  |tee "lab_4_sw.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-   6892	    268	   3152	  10312	   2848	lab_4_sw.elf
+000-'Finished building: lab_4_sw.elf.size'
+000-' '
+00255-
+14:06:56 Build Finished (took 2s.769ms)
+
