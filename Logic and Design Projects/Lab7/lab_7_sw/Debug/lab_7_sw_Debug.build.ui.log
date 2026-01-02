@@ -1,0 +1,33 @@
+2025-03-20T15:39:11.095637300255-15:39:11 **** Build of configuration Debug for project lab_7_sw ****
+000-make all 
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: MicroBlaze gcc compiler'
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IU:/EECE387/Lab_6/workspace/mb_lab6_wrapper/export/mb_lab6_wrapper/sw/mb_lab6_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-../src/helloworld.c: In function 'sev_blinker':
+000/lab_7_sw/src/helloworld.c60-1-1'disp' may be used uninitialized [-Wmaybe-uninitialized]1-../src/helloworld.c:60:34: warning: 'disp' may be used uninitialized [-Wmaybe-uninitialized]
+000-   60 |                 if(cnt != cursor || disp){
+000-      |                    ~~~~~~~~~~~~~~^~~~~~~
+000/lab_7_sw/src/helloworld.c57-1-1'disp' was declared here0-../src/helloworld.c:57:23: note: 'disp' was declared here
+000-   57 |                 _Bool disp;
+000-      |                       ^~~~
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building file: ../src/platform.c'
+000-'Invoking: MicroBlaze gcc compiler'
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IU:/EECE387/Lab_6/workspace/mb_lab6_wrapper/export/mb_lab6_wrapper/sw/mb_lab6_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-'Finished building: ../src/platform.c'
+000-' '
+000-'Building target: lab_7_sw.elf'
+000-'Invoking: MicroBlaze gcc linker'
+000-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/EECE387/Lab_6/workspace/mb_lab6_wrapper/export/mb_lab6_wrapper/sw/mb_lab6_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab_7_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: lab_7_sw.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size lab_7_sw.elf  |tee "lab_7_sw.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-   7048	    268	   3116	  10432	   28c0	lab_7_sw.elf
+000-'Finished building: lab_7_sw.elf.size'
+000-' '
+00255-
+15:39:23 Build Finished (took 11s.881ms)
+
